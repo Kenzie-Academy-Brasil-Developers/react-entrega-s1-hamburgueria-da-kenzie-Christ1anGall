@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const ProductContainer = styled.div`
-  min-width: 18rem;
+  min-width: 14rem;
+  max-width: 14rem;
   min-height: 22rem;
   display: flex;
   flex-direction: column;

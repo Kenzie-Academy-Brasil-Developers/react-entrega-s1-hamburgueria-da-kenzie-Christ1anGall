@@ -3,7 +3,25 @@
 }
 .ContainerProducts {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 115px;
-  gap: 20px;
+  flex-direction: column;
+}
+
+.Products {
+  display: flex;
+  overflow: scroll;
+  gap: 10px;
+  padding: 0 20px;
+  max-width: 712px;
+}
+
+@media only screen and (min-width: 800px) {
+  .ContainerProducts {
+    flex-direction: row;
+    padding: 0 0rem 0 14rem;
+    gap: 1rem;
+  }
+  .Products {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
 }

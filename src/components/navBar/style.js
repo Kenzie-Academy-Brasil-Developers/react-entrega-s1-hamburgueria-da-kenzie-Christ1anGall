@@ -3,7 +3,8 @@ import styled from "styled-components";
 const ContainerHeader = styled.header`
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: var(--color-gray-0);
   align-items: center;
 
@@ -20,13 +21,10 @@ const ContainerHeader = styled.header`
   }
   @media only screen and (min-width: 800px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 33rem;
     flex-direction: row;
-    padding: 0 12rem;
-
-    div {
-      margin-bottom: 15px;
-    }
+    padding: 1rem 12rem;
   }
 `;
 

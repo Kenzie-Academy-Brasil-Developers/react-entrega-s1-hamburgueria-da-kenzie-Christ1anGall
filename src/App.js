@@ -8,9 +8,7 @@ function App() {
   const [ArrayProducts, setArrayProducts] = useState([]);
 
   useEffect(() => {
-    let Products = fetch(
-      "https://hamburgueria-kenzie-json-serve.herokuapp.com/products"
-    )
+    fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
       .then((resp) => resp.json())
       .then((resp) => setArrayProducts(resp));
   });
