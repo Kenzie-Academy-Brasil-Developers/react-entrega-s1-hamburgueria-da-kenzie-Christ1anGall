@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+.ContainerProducts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 115px;
+  gap: 20px;
+}
