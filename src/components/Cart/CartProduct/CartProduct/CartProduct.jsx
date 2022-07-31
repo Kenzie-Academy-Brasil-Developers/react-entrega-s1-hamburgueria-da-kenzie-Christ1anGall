@@ -1,59 +1,27 @@
 import CardCart from "./style";
 
-const CartProduct = () => {
+const CartProduct = ({ elem, setCartProduct, cartProduct }) => {
   return (
-    <ul>
-      <CardCart>
-        <div className="InfoCardCart">
-          <img src="/logo.svg" alt="" />
-          <div>
-            <h1>Heading4</h1>
-            <h5>Caption</h5>
-          </div>
+    <CardCart>
+      <div className="InfoCardCart">
+        <img src={elem.img} alt={elem.name} />
+        <div>
+          <h1>{elem.name}</h1>
+          <h5>{elem.category}</h5>
         </div>
-        <button>Remover</button>
-      </CardCart>
-      <CardCart>
-        <div className="InfoCardCart">
-          <img src="/logo.svg" alt="" />
-          <div>
-            <h1>Heading4</h1>
-            <h5>Caption</h5>
-          </div>
-        </div>
-        <button>Remover</button>
-      </CardCart>
-      <CardCart>
-        <div className="InfoCardCart">
-          <img src="/logo.svg" alt="" />
-          <div>
-            <h1>Heading4</h1>
-            <h5>Caption</h5>
-          </div>
-        </div>
-        <button>Remover</button>
-      </CardCart>
-      <CardCart>
-        <div className="InfoCardCart">
-          <img src="/logo.svg" alt="" />
-          <div>
-            <h1>Heading4</h1>
-            <h5>Caption</h5>
-          </div>
-        </div>
-        <button>Remover</button>
-      </CardCart>
-      <CardCart>
-        <div className="InfoCardCart">
-          <img src="/logo.svg" alt="" />
-          <div>
-            <h1>Heading4</h1>
-            <h5>Caption</h5>
-          </div>
-        </div>
-        <button>Remover</button>
-      </CardCart>
-    </ul>
+      </div>
+      <button
+        onClick={() => {
+          let arrayFiltered = cartProduct.filter((element) => {
+            return element.id !== elem.id;
+          });
+
+          setCartProduct(arrayFiltered);
+        }}
+      >
+        Remover
+      </button>
+    </CardCart>
   );
 };
 

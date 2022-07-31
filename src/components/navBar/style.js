@@ -13,7 +13,7 @@ const ContainerHeader = styled.header`
     height: 3rem;
   }
 
-  div {
+  form {
     display: flex;
     align-items: center;
 

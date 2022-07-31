@@ -39,6 +39,10 @@ const CardCart = styled.div`
     border: none;
     margin-top: 10px;
     color: #bdbdbd;
+    :hover {
+      text-decoration: underline;
+      color: var(--color-gray-100);
+    }
   }
 `;
 

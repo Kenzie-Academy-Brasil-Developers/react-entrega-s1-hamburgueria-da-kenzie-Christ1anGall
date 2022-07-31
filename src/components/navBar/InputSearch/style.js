@@ -5,7 +5,7 @@ const InputMain = styled.input`
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   width: 14.4rem;
-  padding: 0 126px 0 10px;
+  padding: 0 100px 0 10px;
   height: 4rem;
 
   @media only screen and (min-width: 600px) {

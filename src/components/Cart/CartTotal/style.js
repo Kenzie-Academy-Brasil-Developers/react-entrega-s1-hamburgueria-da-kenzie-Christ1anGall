@@ -31,8 +31,14 @@ const CartTotalContainer = styled.section`
     font-size: 16px;
     line-height: 19px;
     color: var(--color-gray-50);
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--color-gray-20);
     border-radius: 8px;
+  }
+
+  button:hover {
+    border: 2px solid var(--color-gray-100);
+    background: var(--color-gray-100);
+    color: var(--color-gray-0);
   }
 `;
 

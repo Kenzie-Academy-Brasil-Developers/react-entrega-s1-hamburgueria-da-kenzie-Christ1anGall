@@ -23,6 +23,7 @@
   .Products {
     flex-wrap: wrap;
     overflow: auto;
+    min-width: 712px;
   }
 }
 

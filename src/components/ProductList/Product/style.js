@@ -4,6 +4,7 @@ const ProductContainer = styled.div`
   min-width: 14rem;
   max-width: 14rem;
   min-height: 22rem;
+  max-height: 22rem;
   display: flex;
   flex-direction: column;
   align-items: center;
