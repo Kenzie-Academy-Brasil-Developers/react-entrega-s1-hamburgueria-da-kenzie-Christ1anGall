@@ -4,6 +4,7 @@
 .ContainerProducts {
   display: flex;
   flex-direction: column;
+  padding: 0 0rem 0 0rem;
 }
 
 .Products {
@@ -17,13 +18,25 @@
 @media only screen and (min-width: 800px) {
   .ContainerProducts {
     flex-direction: row;
-    padding: 0 0rem 0 14rem;
+
+    margin: 0 0rem 0 2rem;
     gap: 1rem;
   }
   .Products {
     flex-wrap: wrap;
     overflow: auto;
     min-width: 712px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ContainerProducts {
+    padding: 0 0rem 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .ContainerProducts {
+    padding: 0 0rem 0 12rem;
   }
 }
 
